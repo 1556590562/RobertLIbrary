@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainTableWindow</class>
+ <widget class="QMainWindow" name="MainTableWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1039</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ActionsContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1021</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1039</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="act_OpenFile"/>
+   <addaction name="act_CloseFile"/>
+   <addaction name="separator"/>
+   <addaction name="act_Add"/>
+   <addaction name="act_Alter"/>
+   <addaction name="act_Delete"/>
+   <addaction name="act_SaveTable"/>
+   <addaction name="separator"/>
+   <addaction name="act_ToPrintFile"/>
+   <addaction name="separator"/>
+   <addaction name="act_Exit"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="act_DataCheck"/>
+   <addaction name="act_Search"/>
+   <addaction name="separator"/>
+   <addaction name="act_UserGuide"/>
+   <addaction name="separator"/>
+   <addaction name="act_About"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="act_Undo"/>
+   <addaction name="act_Redo"/>
+   <addaction name="separator"/>
+   <addaction name="act_SetFontColor"/>
+   <addaction name="act_Left"/>
+   <addaction name="act_Center"/>
+   <addaction name="act_Right"/>
+   <addaction name="act_Full"/>
+   <addaction name="separator"/>
+   <addaction name="act_Copy"/>
+   <addaction name="act_Paste"/>
+   <addaction name="act_Cut"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="act_OpenFile">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/122.bmp</normaloff>:/images/122.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="act_Add">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/100.bmp</normaloff>:/images/100.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="act_Alter">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/804.bmp</normaloff>:/images/804.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </action>
+  <action name="act_Delete">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/706.bmp</normaloff>:/images/706.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="act_ToPrintFile">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/dayin.ico</normaloff>:/images/dayin.ico</iconset>
+   </property>
+   <property name="text">
+    <string>生成打印文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="act_Exit">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/132.bmp</normaloff>:/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="act_About">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/about.ico</normaloff>:/images/about.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关于工具</string>
+   </property>
+  </action>
+  <action name="act_SaveTable">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/104.bmp</normaloff>:/images/104.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="act_DataCheck">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/304.bmp</normaloff>:/images/304.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>数据校验</string>
+   </property>
+  </action>
+  <action name="act_UserGuide">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/230.bmp</normaloff>:/images/230.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>使用指南</string>
+   </property>
+  </action>
+  <action name="act_Left">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/516.bmp</normaloff>:/images/516.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>左对齐</string>
+   </property>
+  </action>
+  <action name="act_Center">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/510.bmp</normaloff>:/images/510.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>居中</string>
+   </property>
+  </action>
+  <action name="act_Full">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/514.bmp</normaloff>:/images/514.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>填充</string>
+   </property>
+  </action>
+  <action name="act_Right">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/512.bmp</normaloff>:/images/512.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>右对齐</string>
+   </property>
+  </action>
+  <action name="act_Copy">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/202.bmp</normaloff>:/images/202.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="act_Paste">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/204.bmp</normaloff>:/images/204.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="act_Cut">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/200.bmp</normaloff>:/images/200.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="act_Search">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/chazhao.ico</normaloff>:/images/chazhao.ico</iconset>
+   </property>
+   <property name="text">
+    <string>查找信息</string>
+   </property>
+   <property name="shortcut">
+    <string>S, S</string>
+   </property>
+  </action>
+  <action name="act_SetFontColor">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/506.bmp</normaloff>:/images/506.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>设置字体颜色</string>
+   </property>
+  </action>
+  <action name="act_Undo">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/206.bmp</normaloff>:/images/206.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="act_Redo">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/208.bmp</normaloff>:/images/208.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="act_CloseFile">
+   <property name="icon">
+    <iconset resource="iamges.qrc">
+     <normaloff>:/images/closeFile.ico</normaloff>:/images/closeFile.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关闭文件</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="iamges.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>act_Exit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainTableWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
